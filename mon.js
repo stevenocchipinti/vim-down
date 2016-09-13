@@ -13,6 +13,10 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/style.css', function(req, res){
+  res.sendFile(__dirname + '/node_modules/github-markdown-css/github-markdown.css');
+});
+
 function emitContent() {
   fs.readFile(filename, 'utf8', (err, contents) => {
     io.emit('file_changed', {

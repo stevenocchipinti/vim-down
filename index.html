@@ -3,12 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+    .heading {
+      font-family: monospace
+    }
+    .markdown-body {
+      background-color: #fff;
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+  </style>
 </head>
 <body>
 
-  <h1>VimDown</h1>
-  <hr />
-  <div id="content">hello</div>
+  <h1 class="heading">VimDown</h1>
+  <div id="content" class="markdown-body" >hello</div>
 
   <script src="/socket.io/socket.io.js"></script>
   <script>

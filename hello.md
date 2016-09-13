@@ -1,11 +1,10 @@
 Hello
 =====
 
-blablablabla `app`  
-blablabla bla
+This is a paragraph generated from `markdown`  
+bladidy bla bla bla
 
-sub-heading
------------
+## sub-heading
 
 blablablabla
 
