@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+
+  <h1>VimDown</h1>
+  <hr />
+  <div id="content">hello</div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io();
+    socket.on('file_changed', function(msg) {
+      document.getElementById('content').innerHTML = msg.content
+    });
+  </script>
+
+</body>
+</html>
